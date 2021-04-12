@@ -2,22 +2,22 @@
 This repo has been updated to work with `Python v3.8` and up.
 
 ## About the project
-In this project, we have been asked to use a paragraph of minimum of 2000 words to work on. We have to segment the text into sentences and then have to calculate scores on them.At last we had to generate topic for the paragraph.
+In this project, we have been asked to use a paragraph of minimum of 2000 words to work on. We have to segment the text into sentences and then have to calculate scores on them. At last we had to generate topic for the paragraph.
 
-#### model.py
+### model.py
 This file contains three functions polarity, preprocess and model_call.
 
-###### preprocess(text)
+#### preprocess(text)
 It uses gensim library to clean text and remove stopwords from the text. We have to perform this preprocessing before generating topic.
 
-###### polarity(score)
+#### polarity(score)
 It gives output as "postive","negative" and "neutral" based on the polarity of the sentiment score.
 
-###### model_call(text)
+#### model_call(text)
 This is the function which is called from app.py. We think of splitting the text by ".". The problems which we will face by doing this are as follows-:
-####### 1. If any name (with ".") or designation is present in the text (eg. Mr./Dr./Er. K. Singh or C.Ronaldo Jr.)
-####### 2. If any decimal number is present in the text
-####### 3. If there are " ? " and " ! " are present in the text.(We could have included ":" and ";" in this but these punctuations are used to add sentences)
+1. If any name (with ".") or designation is present in the text (eg. Mr./Dr./Er. K. Singh or C.Ronaldo Jr.)
+2. If any decimal number is present in the text
+3. If there are " ? " and " ! " are present in the text.(We could have included ":" and ";" in this but these punctuations are used to add sentences)
 
 ###### Our approach
 Before splitting, we found the named entities in the text using Spacy module, and replaced them with "/NAMED/". Found entites will be saved as a list. Named entities includes all the names of  people, places, brands, monetary values. This also includes the numbers which are present in the data. So, it helps us with the problems 1 and 2. 
