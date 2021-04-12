@@ -33,8 +33,10 @@ Moving on to the second step (Days when he slept twice), Considering Amit sleeps
 
 The amount of time he will sleep in the afternoon and his active hours before that will be highly related to the above-mentioned sleeping hours(night). <br />
 For eg., if he slept only 2 hours at night, he will probably remain active for 5 to 6 hours and then will take a nap of 3 to 4 hours. Similarly, we can code for others too.
-<br />
-Then, we will combine both the dataset to produce "trainingdata.txt" (sleep log).
+<br /><br />
+Then, we will combine both the dataset to produce "trainingdata.txt" (sleep log). But for training the model, we will not include sleep log of aternoons, because afternoon naps are smaller but Amti active hours are higher. And around 33 percent of data is like this, so it can affect our model. <br />
+For eg. After a nap of 1 or 2 hours in afternoon(2pm - 3pm / 4pm), Amit can remain active for 7 to 10 hours(4pm to 11pm / 2am). <br />
+So, it will be better to remove these datapoints.
 
 ### model.py
 In this, we will fit our model on the "trainingdata.py". Here, I have used Linear regression based on the simplicity of the dataset.
