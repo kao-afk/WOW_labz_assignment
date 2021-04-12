@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Success</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Success Report:</h1>
+    <span><b>Name</b> : {{ data['name'] }}</span><br>
+    <span><b>Hours Slept </b>: {{ data['time'] }}</span><br>
+    <span><b>Estimated Active Hours </b>: {{ data['out'] }}</span><br>
+</div>
+{% endblock %}
