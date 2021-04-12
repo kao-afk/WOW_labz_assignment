@@ -16,21 +16,21 @@ So, we will make the sleep log in two steps-:
 Total = 300 data points (250 days of sleep logs)<br />
 Considering Amit has a job and he tries to live a healthy lifestyle(6 to 8 hours of sleep is enough), we divided his sleeping hours for the first step into the following distribution-:<br />
 4  hours ------- 1  percent
-5  hours ------- 5  percent
-6  hours ------- 30 percent
-7  hours ------- 30 percent 
-8  hours ------- 30 percent 
-9  hours ------- 3  percent
-10 hours ------- 1  percent 
+5  hours ------- 5  percent<br />
+6  hours ------- 30 percent<br />
+7  hours ------- 30 percent<br />
+8  hours ------- 30 percent<br />
+9  hours ------- 3  percent<br />
+10 hours ------- 1  percent<br />
 <br />
-So his active hours will be essentially 24 - sleeping hours+(some random negative integer (-2,0)).
+So his active hours will be essentially 24 - sleeping hours+(some random negative integer (-2,0)).<br />
 
 
 Moving on to the second step (Days when he slept twice), Considering Amit sleeps twice (if he needs), we divided his sleeping hours(night) into the following distribution-:<br />
 2 hours ------- 6   percent
-3 hours ------- 20  percent
-4 hours ------- 44  percent
-5 hours ------- 30  percent
+3 hours ------- 20  percent<br />
+4 hours ------- 44  percent<br />
+5 hours ------- 30  percent<br />
 
 The amount of time he will sleep in the afternoon and his active hours before that will be highly related to the above-mentioned sleeping hours(night). <br />
 For eg., if he slept only 2 hours at night, he will probably remain active for 5 to 6 hours and then will take a nap of 3 to 4 hours. Similarly, we can code for others too.
