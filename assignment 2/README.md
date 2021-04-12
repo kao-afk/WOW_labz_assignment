@@ -21,8 +21,9 @@ This is the function which is called from app.py. We think of splitting the text
 
 ###### Our approach
 Before splitting, we found the named entities in the text using Spacy module, and replaced them with "/NAMED/". Found entites will be saved as a list. Named entities includes all the names of  people, places, brands, monetary values. This also includes the numbers which are present in the data. So, it helps us with the problems 1 and 2. 
-For eg.- Er. K. Singh is an engineer.
-gets converted to Er. /NAMED/ is an engineer.
+For eg.
+1. Er. K. Singh is an engineer.
+It gets converted to Er. /NAMED/ is an engineer.
 Still, it doesnt catches the Mr./Dr./Mrs. present before the name so we have to add this separately in our code. We know that any designation follows majorly these conditions i.e. maximum 3 characters long and have capitl letter at the beginning. For this, after splitting the text by "." and saving result into the list, we iterate and check if the last word of the list item follows forementioned conditions. If found we will add the list items.
 Now, we will replace back "/NAMED/" with entities from the list.
 For the last problem, we will split once again the list items "?" and "!" if they are present in the text.
