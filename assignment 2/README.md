@@ -19,7 +19,7 @@ This is the function which is called from app.py. We think of splitting the text
 2. If any decimal number is present in the text
 3. If there are " ? " and " ! " are present in the text.(We could have included ":" and ";" in this but these punctuations are used to add sentences)
 
-###### Our approach
+#### Our approach
 Before splitting, we found the named entities in the text using Spacy module, and replaced them with "/NAMED/". Found entites will be saved as a list. Named entities includes all the names of  people, places, brands, monetary values. This also includes the numbers which are present in the data. So, it helps us with the problems 1 and 2. <br />
 For eg.
 <br />Er. K. Singh is an engineer.
@@ -33,7 +33,7 @@ We perform these steps here-:
 2.  Sentiment score calculation using Textblob.
 3.  We will perform the topic modelling uing LDA model.
 
-#### app.py
+### app.py
 Use this to run the server.
 
 Note: I had developed an environment for that.
