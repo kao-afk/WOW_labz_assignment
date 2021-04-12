@@ -12,8 +12,8 @@ We assume that for 20 days in a month, Amit sleeps once a day and rest 10 days (
 Days sleeping once= 20/30*100 = 66.66%
 So, we will make the sleep log in two steps-:
 1. 66.66% of 300 data points i.e.200, Amit will sleep once.
-2. Rest 50 days he will sleep twice. (2*50=100)<br />
-Total = 300 data points (250 days of sleep logs)<br />
+2. Rest 50 days he will sleep twice. (2*50=100)
+Total = 300 data points (250 days of sleep logs)<br /><br />
 Considering Amit has a job and he tries to live a healthy lifestyle(6 to 8 hours of sleep is enough), we divided his sleeping hours for the first step into the following distribution-:<br />
 4  hours ------- 1  percent
 5  hours ------- 5  percent<br />
