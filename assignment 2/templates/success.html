@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Success</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Success Report:</h1>
+    <table style="border-style:solid ;">
+        <thead>
+            <tr >
+                <th>Sentences</th>
+                <th>Sentiment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for out in outs %}
+            <tr >
+                
+                <td >{{out[0]}}</td>
+                <td >{{out[1]}}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br><br>
+    <span><b>Sentiment on Full paragraph:</b> {{first}}</span><br><br>
+    <span><b>Topic of the Paragraph (Based on Ranking of key words):</b> {{second}}</span>
+</div>
+{% endblock %}
